@@ -9,5 +9,12 @@ public class ChantDeBataille {
         axeY= iaxeY;
         flotilde = new char[axeX][axeY];
     }
-
+    void afficherGrille() {
+        for (int i = 0; i < axeX; i++) {
+            for (int j = 0; j < axeY; j++) {
+                System.out.print(flotilde[i][j] + "   ");
+            }
+            System.out.println();
+        }
+    }
 }
